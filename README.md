@@ -1,18 +1,21 @@
 # AjaxRequests
 Send Request with basic technologies JS Vanilla, Fetch, Axios and jQuery
 
-#Requests:
+# Requests:
 
 JS Vanilla
 
 request.open("method","url" true)
 
+
 Fetch
 
 fetch(url)
 
+
 Axios:
 axios.method(url)
+
 
 jQuery
 
