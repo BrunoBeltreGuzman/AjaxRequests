@@ -32,7 +32,7 @@ fetch("url", { setting })
               //handle error
        });
 ```
-Since Fetch is based on async and await, this could also be done with an async and await function.
+_Since Fetch is based on async and await, this could also be done with an async and await function._
 
 
 
@@ -48,7 +48,7 @@ axios({ setting })
               //handle error
        });
 ```
-Axios tambien se basa en async y await, por lo que también se podría hacer con una función async y await.
+_Axios tambien se basa en async y await, por lo que también se podría hacer con una función async y await._
 
 
 
@@ -56,9 +56,16 @@ Axios tambien se basa en async y await, por lo que también se podría hacer con
 
 The jQuery library has a full set of Ajax capabilities. The functions and methods it contains allow us to load data from the server without the need to refresh the browser page.
 ```javascript
-$.ajax("url", { setting });
+$.ajax("url", { setting, 
+       success: function (response) {
+              //response
+       },
+       error: function (request, status, error){
+              //handle error
+       }
+});
 ```
-A set of key / value pairs that configure the Ajax request. All settings are optional.
+_A set of key / value pairs that configure the Ajax request. All settings are optional._
 
 
 
